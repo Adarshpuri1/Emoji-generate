@@ -6,6 +6,7 @@ const emojiDisplay= document.getElementById('emoji-display');
 function generateRandomEmoji(){
     const randomIndex=Math.floor(Math.random()* emojis.length);
     emojiDisplay.textContent=emojis[randomIndex];
+    emojiDisplay.style.opacity='1';
 }
 
 generateBtn.addEventListener('click',generateRandomEmoji);
